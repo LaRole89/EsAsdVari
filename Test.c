@@ -34,24 +34,27 @@
 //extern void selectionsort(int v[], int dim);
 
 /* Consegne 31 10 2014 es 3 */
-extern void ordinato3(int v[], int dim);
+//extern void ordinato3(int v[], int dim);
+
+/* Consegne 28 10 2009 es 1 */
+extern void partizione(int v[], int dim);
 
 
 int main(int argc, char** argv) {
 
-	int a[] = {5, 7, 15, 1, 4, 3, 5};
+	int a[] = {0, 3, -5, 1, -7};
 	int i;
         int ris;
 	printf("\n\nUnsorted array is:  ");
-	for(i = 0; i < 7; ++i)
+	for(i = 0; i < 5; ++i)
 		printf(" %d ", a[i]);
 
-	ordinato3(a, 7);
+	partizione(a, 5);
         
         //printf("\n\n risultato %d ", ris);
 
 	printf("\n\nSorted array is:  ");
-	for(i = 0; i < 7; ++i)
+	for(i = 0; i < 5; ++i)
 		printf(" %d ", a[i]);
 }
 
