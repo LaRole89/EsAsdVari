@@ -36,6 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Compitino29012013Es1.o \
+	${OBJECTDIR}/Consegne28102009Es1.o \
+	${OBJECTDIR}/Consegne28102009Es2.o \
 	${OBJECTDIR}/Consegne31102014Es1.o \
 	${OBJECTDIR}/Consegne31102014Es2.o \
 	${OBJECTDIR}/Consegne31102014Es3.o \
@@ -75,6 +77,16 @@ ${OBJECTDIR}/Compitino29012013Es1.o: Compitino29012013Es1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Compitino29012013Es1.o Compitino29012013Es1.c
+
+${OBJECTDIR}/Consegne28102009Es1.o: Consegne28102009Es1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Consegne28102009Es1.o Consegne28102009Es1.c
+
+${OBJECTDIR}/Consegne28102009Es2.o: Consegne28102009Es2.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Consegne28102009Es2.o Consegne28102009Es2.c
 
 ${OBJECTDIR}/Consegne31102014Es1.o: Consegne31102014Es1.c 
 	${MKDIR} -p ${OBJECTDIR}

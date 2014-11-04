@@ -16,6 +16,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Compitino29012013Es1.c</itemPath>
+      <itemPath>Consegne28102009Es1.c</itemPath>
+      <itemPath>Consegne28102009Es2.c</itemPath>
       <itemPath>Consegne31102014Es1.c</itemPath>
       <itemPath>Consegne31102014Es2.c</itemPath>
       <itemPath>Consegne31102014Es3.c</itemPath>
@@ -47,6 +49,10 @@
       <compileType>
       </compileType>
       <item path="Compitino29012013Es1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es2.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne31102014Es1.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -90,6 +96,10 @@
         </asmTool>
       </compileType>
       <item path="Compitino29012013Es1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es2.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne31102014Es1.c" ex="false" tool="0" flavor2="0">
       </item>
