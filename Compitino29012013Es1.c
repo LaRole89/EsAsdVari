@@ -14,9 +14,5 @@
  * complessità al caso pessimo indicando, e risolvendo, la corrispondente relazione di ricorrenza.
  */
 
-typedef struct node{
-    int val;
-    struct node *left;
-    struct node *right;
-}Node;
+
 

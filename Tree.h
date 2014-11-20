@@ -16,20 +16,20 @@ typedef struct node{
     int val;
     struct node *left;
     struct node *right;
-}Node, *Node_pt;
+}Node;
 
-Node_pt emtptyThree();
+typedef Node* Tree;
+/*/
+Tree emptyThree();
 
-Node_pt creaAlbero(int key, Node_pt figlioSx, Node_pt figlioDx);
+void stampaAlbero(Tree tree);
 
-void stampaAlbero(Node_pt tree);
+void stampaInOrder(Tree tree);
 
-void stampaInOrder(Node_pt tree);
+void stampaPostOrder(Tree tree);
 
-void stampaPostOrder(Node_pt tree);
-
-void stampaPreOrder(Node_pt tree);
-
+void stampaPreOrder(Tree tree);
+*/
 #ifdef	__cplusplus
 }
 

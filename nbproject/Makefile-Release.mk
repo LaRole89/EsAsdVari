@@ -36,8 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Compitino29012013Es1.o \
+	${OBJECTDIR}/Consegne23102010Es3.o \
 	${OBJECTDIR}/Consegne28102009Es1.o \
 	${OBJECTDIR}/Consegne28102009Es2.o \
+	${OBJECTDIR}/Consegne28102009Es4.o \
 	${OBJECTDIR}/Consegne31102014Es1.o \
 	${OBJECTDIR}/Consegne31102014Es2.o \
 	${OBJECTDIR}/Consegne31102014Es3.o \
@@ -45,6 +47,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Esame29052012Es2.o \
 	${OBJECTDIR}/Esame30052013Es2.o \
 	${OBJECTDIR}/Test.o \
+	${OBJECTDIR}/functionTree.o \
 	${OBJECTDIR}/margeSort.o \
 	${OBJECTDIR}/quickSort.o
 
@@ -78,6 +81,11 @@ ${OBJECTDIR}/Compitino29012013Es1.o: Compitino29012013Es1.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Compitino29012013Es1.o Compitino29012013Es1.c
 
+${OBJECTDIR}/Consegne23102010Es3.o: Consegne23102010Es3.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Consegne23102010Es3.o Consegne23102010Es3.c
+
 ${OBJECTDIR}/Consegne28102009Es1.o: Consegne28102009Es1.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -87,6 +95,11 @@ ${OBJECTDIR}/Consegne28102009Es2.o: Consegne28102009Es2.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Consegne28102009Es2.o Consegne28102009Es2.c
+
+${OBJECTDIR}/Consegne28102009Es4.o: Consegne28102009Es4.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Consegne28102009Es4.o Consegne28102009Es4.c
 
 ${OBJECTDIR}/Consegne31102014Es1.o: Consegne31102014Es1.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -122,6 +135,11 @@ ${OBJECTDIR}/Test.o: Test.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Test.o Test.c
+
+${OBJECTDIR}/functionTree.o: functionTree.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/functionTree.o functionTree.c
 
 ${OBJECTDIR}/margeSort.o: margeSort.c 
 	${MKDIR} -p ${OBJECTDIR}

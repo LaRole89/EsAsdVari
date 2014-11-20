@@ -40,24 +40,52 @@
 //extern void partizione(int v[], int dim);
 
 /* Consegne 28 10 2009 es  */
-extern int ugualeAindice(int v[],int i, int f);
+//extern int ugualeAindice(int v[],int i, int f);
+
+/* Consegne 28 10 2009 es  4*/
+//extern int occ(int *v, int dim, int k);
+
+/* functionTree */
+extern Tree emptyThree();
+extern int IsEmpty(Tree t);
+extern Tree createNode(int key, Tree figlioSx, Tree figlioDx);
+extern void stampaInOrder(Tree tree);
+extern void stampaPostOrder(Tree tree);
+extern void stampaPreOrder(Tree tree);
+Tree creaAlbero(int *a, int i, int f);
+/**/
 
 
 int main(int argc, char** argv) {
-
-	int a[] = {-2, 0, 3, 5, 7, 5};
+        //STAMPA ARRAY
+    /*
+	int a[] = {3, 3, 5, 6, 7, 7, 7, 9, 9, 10, 11};
 	int i;
         int ris;
 	printf("\n\nUnsorted array is:  ");
 	for(i = 0; i < 7; ++i)
-		printf(" %d ", a[i]);
+		printf(" %d ", *(a+i));
 
-	ris = ugualeAindice(a,0, 6);
+	ris = occ(a, 11, 7);
         
         printf("\n\n risultato %d ", ris);
 
 	printf("\n\nSorted array is:  ");
 	for(i = 0; i < 6; ++i)
 		printf(" %d ", a[i]);
+    */    
+        
+        //STAMPA ALBERI
+    	int a[] = {3, 3, 5, 6, 7, 7, 7, 9, 9, 10, 11};
+        int indexI, indexF, dim;
+	int i;
+        int ris;
+        Tree t;
+        
+        t=creaAlbero(a,0,10);
+        //printf(" %d ", t->left->val);
+
+
+
 }
 

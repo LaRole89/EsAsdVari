@@ -9,6 +9,7 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>functionTree.c</itemPath>
       <itemPath>margeSort.c</itemPath>
       <itemPath>quickSort.c</itemPath>
     </logicalFolder>
@@ -16,8 +17,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Compitino29012013Es1.c</itemPath>
+      <itemPath>Consegne23102010Es3.c</itemPath>
       <itemPath>Consegne28102009Es1.c</itemPath>
       <itemPath>Consegne28102009Es2.c</itemPath>
+      <itemPath>Consegne28102009Es4.c</itemPath>
       <itemPath>Consegne31102014Es1.c</itemPath>
       <itemPath>Consegne31102014Es2.c</itemPath>
       <itemPath>Consegne31102014Es3.c</itemPath>
@@ -50,9 +53,13 @@
       </compileType>
       <item path="Compitino29012013Es1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Consegne23102010Es3.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Consegne28102009Es1.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne28102009Es2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es4.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne31102014Es1.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -69,6 +76,8 @@
       <item path="Test.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="functionTree.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -97,9 +106,13 @@
       </compileType>
       <item path="Compitino29012013Es1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Consegne23102010Es3.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Consegne28102009Es1.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne28102009Es2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Consegne28102009Es4.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Consegne31102014Es1.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -116,6 +129,8 @@
       <item path="Test.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="functionTree.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
       </item>
