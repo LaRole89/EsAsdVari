@@ -21,26 +21,27 @@ Tree createNode(int key, Tree figlioSx, Tree figlioDx){
 }
 
 void stampaInOrder(Tree tree){
-    if(tree==NULL){
-        printf(" . ");
+    if(tree!=NULL){
+        stampaInOrder(tree->left); //sx
+        printf(" %u ", tree->val); //radice
+        stampaInOrder(tree->right); //dx
         return;
     }else{
-    stampaInOrder(tree->left); //sx
-    printf(" %u ", tree->val); //radice
-    stampaInOrder(tree->right); //dx
-    return;
+        printf(" . ");
+        return;
     }
+
 }
 
 void stampaPostOrder(Tree tree){
-    if(tree=NULL){
-        printf(" . ");
+    if(tree!=NULL){
+        stampaPostOrder(tree->left); //sx
+        stampaPostOrder(tree->right); //dx
+        printf(" %u ", tree->val); //radice
         return;
     }else{
-    stampaPostOrder(tree->left); //sx
-    stampaPostOrder(tree->right); //dx
-    printf(" %u ", tree->val); //radice
-    return;  
+        printf(" . ");
+        return;
     }
 }
 
@@ -48,12 +49,11 @@ void stampaPreOrder(Tree tree){
     if(tree==NULL){
         printf(" . ");
         return;
-    }else{
+    }
     printf(" %u ", tree->val); //radice
     stampaPreOrder(tree->left); //sx
     stampaPreOrder(tree->right); //dx
     return;
-    }
 }
 
 Tree creaAlbero(int *a, int i, int f){
@@ -64,3 +64,5 @@ Tree creaAlbero(int *a, int i, int f){
         return createNode(a[mid],creaAlbero(a, i, mid-1), creaAlbero(a, mid+1, f));
     }
 }
+
+

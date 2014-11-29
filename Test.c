@@ -45,15 +45,6 @@
 /* Consegne 28 10 2009 es  4*/
 //extern int occ(int *v, int dim, int k);
 
-/* functionTree */
-extern Tree emptyThree();
-extern int IsEmpty(Tree t);
-extern Tree createNode(int key, Tree figlioSx, Tree figlioDx);
-extern void stampaInOrder(Tree tree);
-extern void stampaPostOrder(Tree tree);
-extern void stampaPreOrder(Tree tree);
-Tree creaAlbero(int *a, int i, int f);
-/**/
 
 
 int main(int argc, char** argv) {
@@ -80,11 +71,18 @@ int main(int argc, char** argv) {
         int indexI, indexF, dim;
 	int i;
         int ris;
-        Tree t;
-        
-        t=creaAlbero(a,0,10);
-        //printf(" %d ", t->left->val);
+        Tree t,p;
 
+        t=emptyThree();
+        t=createABRtoARRAY(a, 11,t);
+        //printf(" %d ", t->left->val);
+        stampaInOrder(t);
+            printf("\n \n");
+        printLevelOrder(t);
+            printf("\n"); 
+                
+        p=predecessore(t,9);
+            printf("%u \n", p->val);
 
 
 }
