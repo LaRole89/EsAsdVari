@@ -83,3 +83,26 @@ char * first(Queue q){
 int size(Queue q){
     return q->size;
 }
+
+
+
+
+Queue createQUEUEtoARRAY(char* *a, int dim, Queue q){
+    int i;
+    for(i=0 ; i<dim; i++){
+        enqueue(q, a[i]);
+    }
+    return q;
+}
+
+void printQueue(Queue q){
+    QNode* print=q->first;
+    while(1){
+        printf(" %s ", print->val);
+        if(q->last==print)
+            return;
+        else
+            print=print->next;
+    }
+}
+ 

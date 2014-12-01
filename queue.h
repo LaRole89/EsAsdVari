@@ -21,6 +21,8 @@ void enqueue(Queue q, char * elem);
 char * dequeue(Queue q);
 char * first(Queue q);
 int size(Queue q);
+Queue createQUEUEtoARRAY(char* *a, int dim, Queue q);
+void printQueue(Queue q);
 
 #ifdef	__cplusplus
 }

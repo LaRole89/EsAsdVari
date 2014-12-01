@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "queue.h"
 #include "Tree.h"
 /*
  * 
@@ -45,7 +47,7 @@
 /* Consegne 28 10 2009 es  4*/
 //extern int occ(int *v, int dim, int k);
 
-
+extern void inverti(Queue q);
 
 int main(int argc, char** argv) {
         //STAMPA ARRAY
@@ -67,6 +69,7 @@ int main(int argc, char** argv) {
     */    
         
         //STAMPA ALBERI
+    /*
     	int a[] = {3, 3, 5, 6, 7, 7, 7, 9, 9, 10, 11};
         int indexI, indexF, dim;
 	int i;
@@ -83,9 +86,33 @@ int main(int argc, char** argv) {
                 
         p=predecessore(t,9);
             printf("%u \n", p->val);
-            
+    */        
         //STAMPA LISTE
+        char a[]={'c','i','a','a','o'};
+        char b[]={'c','i','c','c','i','o'};
+        char c[]={'a','i','a','o'};
+        char d[]={'p','a','b','l','o'};
+        int i;
 
-
+        char* total[]={a,b,c,d};
+        
+        Queue que=initqueue();
+        
+        printf("\n\nUnsorted array is:  ");
+	for(i = 0; i < 4; ++i)
+		printf(" %s ", *(total+i));
+            
+            //creo la coda
+        printf("\n\nQueue Before is:  ");
+        enqueue(que,a);
+        enqueue(que,b);
+        enqueue(que,c);
+        enqueue(que,d);
+        printQueue(que);
+        
+        printf("\n\nQueue After is:  ");
+        inverti(que);
+        printQueue(que);
+return (EXIT_SUCCESS);
 }
 
