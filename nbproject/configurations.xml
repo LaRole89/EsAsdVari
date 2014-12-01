@@ -5,11 +5,13 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Tree.h</itemPath>
+      <itemPath>queue.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
       <itemPath>functionABR.c</itemPath>
+      <itemPath>functionQueue.c</itemPath>
       <itemPath>functionTree.c</itemPath>
       <itemPath>margeSort.c</itemPath>
       <itemPath>quickSort.c</itemPath>
@@ -80,9 +82,13 @@
       </item>
       <item path="functionABR.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="functionQueue.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="functionTree.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="queue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="quickSort.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -135,9 +141,13 @@
       </item>
       <item path="functionABR.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="functionQueue.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="functionTree.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="queue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="quickSort.c" ex="false" tool="0" flavor2="0">
       </item>

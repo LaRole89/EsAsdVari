@@ -48,6 +48,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Esame30052013Es2.o \
 	${OBJECTDIR}/Test.o \
 	${OBJECTDIR}/functionABR.o \
+	${OBJECTDIR}/functionQueue.o \
 	${OBJECTDIR}/functionTree.o \
 	${OBJECTDIR}/margeSort.o \
 	${OBJECTDIR}/quickSort.o
@@ -141,6 +142,11 @@ ${OBJECTDIR}/functionABR.o: functionABR.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/functionABR.o functionABR.c
+
+${OBJECTDIR}/functionQueue.o: functionQueue.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/functionQueue.o functionQueue.c
 
 ${OBJECTDIR}/functionTree.o: functionTree.c 
 	${MKDIR} -p ${OBJECTDIR}

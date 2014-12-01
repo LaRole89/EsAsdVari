@@ -83,6 +83,8 @@ int main(int argc, char** argv) {
                 
         p=predecessore(t,9);
             printf("%u \n", p->val);
+            
+        //STAMPA LISTE
 
 
 }
