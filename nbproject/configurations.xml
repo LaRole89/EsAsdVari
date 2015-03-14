@@ -13,6 +13,7 @@
       <itemPath>functionABR.c</itemPath>
       <itemPath>functionQueue.c</itemPath>
       <itemPath>functionTree.c</itemPath>
+      <itemPath>heapSort.c</itemPath>
       <itemPath>margeSort.c</itemPath>
       <itemPath>quickSort.c</itemPath>
     </logicalFolder>
@@ -89,6 +90,8 @@
       </item>
       <item path="functionTree.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="heapSort.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="queue.h" ex="false" tool="3" flavor2="0">
@@ -149,6 +152,8 @@
       <item path="functionQueue.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="functionTree.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="heapSort.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="margeSort.c" ex="false" tool="0" flavor2="0">
       </item>

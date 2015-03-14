@@ -65,4 +65,10 @@ Tree creaAlbero(int *a, int i, int f){
     }
 }
 
-
+Tree createTREEtoARRAY(int *a, int i,int f){
+    if(i>f){
+        return emptyThree();
+    }else{
+        return createNode(a[i],createTREEtoARRAY(a, 2*i+1, f), createTREEtoARRAY(a, 2*i+2, f));
+    }
+}

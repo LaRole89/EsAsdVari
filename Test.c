@@ -21,6 +21,11 @@
 //extern void MergeSort(int A[], int p, int r);
 //extern void Merge(int A[], int p, int q, int r);
 
+/* HeapSort */
+extern void heapify(int *a,int n);
+extern void adjust(int *a,int n);
+extern void heapsort(int *a,int n);
+
 /* Esame 30 05 2013 es 2 */
 //extern int algoritmo(int a[], int k, int alength);
 
@@ -47,26 +52,24 @@
 /* Consegne 28 10 2009 es  4*/
 //extern int occ(int *v, int dim, int k);
 
-extern void inverti(Queue q);
+//extern void inverti(Queue q);
 
 int main(int argc, char** argv) {
         //STAMPA ARRAY
-    /*
-	int a[] = {3, 3, 5, 6, 7, 7, 7, 9, 9, 10, 11};
+
+	int a[] = {7, 6, 7, 9, 10, 11, 7, 9, 3, 3, 5};
 	int i;
         int ris;
-	printf("\n\nUnsorted array is:  ");
-	for(i = 0; i < 7; ++i)
+        
+	printf("Unsorted array is:  ");
+	for(i = 0; i < 11; ++i)
 		printf(" %d ", *(a+i));
 
-	ris = occ(a, 11, 7);
-        
-        printf("\n\n risultato %d ", ris);
-
+        //heapify(a,11);
 	printf("\n\nSorted array is:  ");
-	for(i = 0; i < 6; ++i)
+	for(i = 0; i < 11; ++i)
 		printf(" %d ", a[i]);
-    */    
+      
         
         //STAMPA ALBERI
     /*
@@ -74,20 +77,19 @@ int main(int argc, char** argv) {
         int indexI, indexF, dim;
 	int i;
         int ris;
+    */    
         Tree t,p;
 
         t=emptyThree();
-        t=createABRtoARRAY(a, 11,t);
+        t=createABRWPtoARRAY(a, 11, t);
+        deleteABRnode(t,6);
         //printf(" %d ", t->left->val);
-        stampaInOrder(t);
             printf("\n \n");
         printLevelOrder(t);
             printf("\n"); 
-                
-        p=predecessore(t,9);
-            printf("%u \n", p->val);
-    */        
+
         //STAMPA LISTE
+            /*
         char a[]={'c','i','a','a','o'};
         char b[]={'c','i','c','c','i','o'};
         char c[]={'a','i','a','o'};
@@ -113,6 +115,7 @@ int main(int argc, char** argv) {
         printf("\n\nQueue After is:  ");
         inverti(que);
         printQueue(que);
+             * */
 return (EXIT_SUCCESS);
 }
 

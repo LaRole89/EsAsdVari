@@ -14,6 +14,7 @@ extern "C" {
     
 typedef struct node{
     int val;
+    struct node *parent;
     struct node *left;
     struct node *right;
 }Node;
@@ -28,7 +29,12 @@ void stampaInOrder(Tree tree);
 void stampaPostOrder(Tree tree);
 void stampaPreOrder(Tree tree);
 Tree creaAlbero(int *a, int i, int f);
+Tree createTREEtoARRAY(int *a, int i,int f);
 void print_at_level(Tree node, int desired, int current);
+
+Tree createNodeWp(int key, Tree figlioSx, Tree figlioDx, Tree parent);
+Tree addABRnodeWp(int key, Tree t);
+Tree createABRWPtoARRAY(int *a, int dim, Tree tree);
 
     // ABR (Albero Binario di Ricerca //  
 Tree addABRnode(int key, Tree t);
@@ -41,6 +47,7 @@ int maxHeight(Tree tree);
 void printLevel(Tree p, int level);
 void printLevelOrder(Tree tree);
 Tree predecessore(Tree tree, int k);
+void deleteABRnode(Tree tree, int k);
 /**/
 
 

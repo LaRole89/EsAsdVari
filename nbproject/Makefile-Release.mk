@@ -51,6 +51,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/functionABR.o \
 	${OBJECTDIR}/functionQueue.o \
 	${OBJECTDIR}/functionTree.o \
+	${OBJECTDIR}/heapSort.o \
 	${OBJECTDIR}/margeSort.o \
 	${OBJECTDIR}/quickSort.o
 
@@ -73,11 +74,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/asdesvari.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esasdvari.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/asdesvari.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esasdvari.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/asdesvari ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esasdvari ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Compitino29012013Es1.o: Compitino29012013Es1.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -159,6 +160,11 @@ ${OBJECTDIR}/functionTree.o: functionTree.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/functionTree.o functionTree.c
 
+${OBJECTDIR}/heapSort.o: heapSort.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/heapSort.o heapSort.c
+
 ${OBJECTDIR}/margeSort.o: margeSort.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -175,7 +181,7 @@ ${OBJECTDIR}/quickSort.o: quickSort.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/asdesvari.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esasdvari.exe
 
 # Subprojects
 .clean-subprojects:

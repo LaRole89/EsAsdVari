@@ -11,6 +11,48 @@
  *  <=x    >=x
  */
 
+Tree createNodeWp(int key, Tree figlioSx, Tree figlioDx, Tree parent){
+    Tree r;
+    r=(Node *) malloc(sizeof(Node));
+    r->val=key;
+    r->left=figlioSx;
+    r->right=figlioDx;
+    r->parent=parent;
+    return r;
+}
+
+Tree addABRnodeWp(int key, Tree t){
+    if(t==NULL){
+        t=createNodeWp(key, NULL, NULL, NULL);
+        return t;
+    }else{
+        if(t->val<key){
+            if(t->right==NULL){
+                t->right=createNodeWp(key,NULL,NULL,t);
+            }else{
+                addABRnodeWp(key,t->right);
+            }
+        }else{
+            if(t->left==NULL){
+                t->left=createNodeWp(key,NULL,NULL,t);                
+            }else{
+                addABRnodeWp(key,t->left);
+            }
+        }
+        return t;
+    }
+    
+}
+
+Tree createABRWPtoARRAY(int *a, int dim, Tree tree){
+    int i;
+    for(i=0 ; i<dim; i++){
+        tree=addABRnodeWp(a[i], tree);
+    }
+    return tree;
+}
+
+
 Tree addABRnode(int key, Tree t){    
     if(t==NULL){
         Tree newnode;
@@ -126,4 +168,67 @@ Tree predecessore(Tree tree, int k){
         }
     }
     return pred;
+}
+
+void deleteABRnode(Tree tree, int k){
+    if(tree==NULL){
+        printf("\n L'albero è vuoto");
+        return;
+    }
+    
+    if(!isInABR(tree,k)){
+        printf("\n il nodo non è presente nell'albero");
+        return;
+    }
+
+    if(tree->val==k){
+        if((tree->left==NULL)&&(tree->right==NULL)){
+            if(tree->parent->val<tree->val)
+                tree->parent->right=NULL;
+            else
+                tree->parent->left=NULL;
+            free(tree);
+        }else if((tree->left!=NULL)&&(tree->right!=NULL)){
+            Tree aux;
+            aux=ABRgetMAX(tree->left);
+            printf("\n nodo aux %d", aux->val);
+            //elimino il puntatore del padre del predecessore
+
+            aux->parent->right=NULL;
+            
+            aux->parent=tree->parent;
+            aux->left=tree->left;
+            aux->right=tree->right;
+            //modifico il puntatore del padre
+            if(tree->parent->val<tree->val)
+                tree->parent->right=aux;
+            else
+               tree->parent->left=aux;       
+            free(tree);
+        }else{
+            if(tree->left!=NULL){
+                //modifico il puntatore del padre
+                if(tree->parent->val<tree->val)
+                    tree->parent->right=tree->left;
+                else
+                    tree->parent->left=tree->left;
+                //modifico il puntatore del figlio
+                tree->left->parent=tree->parent;
+                free(tree);
+            }else{
+                //modifico il puntatore del padre
+                if(tree->parent->val<tree->val)
+                    tree->parent->right=tree->right;
+                else
+                    tree->parent->left=tree->right;
+                //modifico il puntatore del figlio
+                tree->right->parent=tree->parent;
+                free(tree);
+            }
+        }
+    }else if(tree->val<k){
+        deleteABRnode(tree->right,k);
+    }else if(tree->val>k){
+        deleteABRnode(tree->left,k);
+    }
 }

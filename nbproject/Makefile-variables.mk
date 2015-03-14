@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=asdesvari
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/asdesvari
+CND_ARTIFACT_NAME_Debug=esasdvari
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/esasdvari
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=asdesvari.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/asdesvari.tar
+CND_PACKAGE_NAME_Debug=esasdvari.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/esasdvari.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=asdesvari
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/asdesvari
+CND_ARTIFACT_NAME_Release=esasdvari
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/esasdvari
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=asdesvari.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/asdesvari.tar
+CND_PACKAGE_NAME_Release=esasdvari.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/esasdvari.tar
 #
 # include compiler specific variables
 #
